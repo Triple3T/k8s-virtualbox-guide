@@ -42,6 +42,7 @@ kubectl -n kube-system get secret/admin-user-token
 Kubernetes Dashboard를 설치했으나, 이를 사용하기 위해서는 proxy를 통해 외부 연결을 설정해주어야 합니다.
 
 아래 명령어를 `k8s-master`에 실행하여 `8001`번 포트에 Kubernetes Dashboard를 연결하십시오. `<ip>` 자리에 `k8s-master`에 지정한 IP 주소를 입력하십시오.
+이 명령어는 VM을 종료하고 다시 시작할 때마다(정확히는 이 프로세스가 종료될 때마다) 실행해야 합니다.
 
 ```shell
 nohup kubectl proxy --port=8001 --address=<ip> --accept-hosts='^*$' >/dev/null 2>&1 &

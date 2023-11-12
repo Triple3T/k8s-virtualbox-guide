@@ -1,7 +1,7 @@
 # k8s-virtualbox-guide
 VirtualBox에 k8s 설치하는 방법
 
-## [시작하기 전에](/guids/00-before-start.md)
+## [시작하기 전에](/guides/00-before-start.md)
 
 ## [1. 가상 머신 만들기](/guides/01-creating-vms.md)
 

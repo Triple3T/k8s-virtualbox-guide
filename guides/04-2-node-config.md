@@ -4,7 +4,7 @@
 
 VM 중 `k8s-msater`를 제외한 나머지를 `k8s-master`에 연동시켜야 합니다.
 
-우선 아래 명령어를 cmd에 입력해 k8s-master에서 가져온 join.sh 파일과 cfg 파일을 k8s-master를 제외한 각 노드에 넣어 주십시오. 아래 명령어에서 <node-username> 자리에는 해당 노드의 username을, <node-ip>에는 해당 노드에 지정한 IP 주소를 입력하십시오.
+우선 아래 명령어를 cmd에 입력해 `k8s-master`에서 가져온 join.sh 파일과 cfg 파일을 k8s-master를 제외한 각 노드에 넣어 주십시오. 아래 명령어에서 <node-username> 자리에는 해당 노드의 username을, <node-ip>에는 해당 노드에 지정한 IP 주소를 입력하십시오.
 
 ```shell
 scp join.sh <node-username>@<node-ip>:/home/<node-username>/join.sh

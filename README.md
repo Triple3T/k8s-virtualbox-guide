@@ -1,5 +1,5 @@
 # k8s-virtualbox-guide
-VirtualBox에 k8s 설치하는 방법
+VirtualBox에 Kubernetes 설치하는 방법
 
 ## [시작하기 전에](/guides/00-before-start.md)
 

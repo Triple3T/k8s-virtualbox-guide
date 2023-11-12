@@ -29,7 +29,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 `sudo sh ./join.sh` 명령이 실패한 경우 아래를 참고해 `k8s-master`에서 파일을 다시 생성해야 합니다.
 
-아래 명령을 k8s-master에 실행해 새로운 join.sh를 생성하십시오.
+아래 명령을 `k8s-master`에 실행해 새로운 `join.sh` 파일을 생성하십시오.
 
 ```shell
 sudo kubeadm token create --print-join-command | sed 's/$/ --cri-socket \/var\/run\/cri-dockerd.sock/' > ~/join.sh

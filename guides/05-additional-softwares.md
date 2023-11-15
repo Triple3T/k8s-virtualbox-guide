@@ -30,7 +30,7 @@ kubectl apply -f k8s-dashboard-service-account.yaml
 대시보드에서 사용할 `admin-user` 서비스 계정의 토큰이 제대로 발급되는지 확인하려면 `k8s-master`에서 아래 명령어를 입력하십시오.
 
 ```shell
-kubectl -n kube-system get secret/admin-user-token
+kubectl -n kube-system describe secret/admin-user-token
 ```
 
 ![img](/images/38.png)

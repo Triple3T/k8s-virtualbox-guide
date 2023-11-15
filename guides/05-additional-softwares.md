@@ -77,7 +77,7 @@ http://localhost:8200/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 `token`을 얻어오는 방법은 위에서도 설명했지만 아래 명령을 `k8s-master`에 실행하면 됩니다.
 
 ```shell
-kubectl -n kube-system get secret/admin-user-token
+kubectl -n kube-system describe secret/admin-user-token
 ```
 
 `token`을 복사해 로그인 화면의 입력란에 입력한 뒤 제출하면 로그인을 할 수 있습니다.

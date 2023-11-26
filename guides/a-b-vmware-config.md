@@ -7,7 +7,7 @@ VMWare의 Host-only network 설정은 VirtualBox와 약간 다릅니다. 아래 
 3. 생성한 네트워크를 다음과 같이 수정합니다.
    - Host-only로 설정
    - Use local DHCP server 체크 해제
-   - Subnet IP를 `192.168.x.0`으로 설정, x 자리에는 기존 Virtual Network와 겹치지 않는 주소 중 아무거나 선택
+   - Subnet IP를 `192.168.x.0`으로 설정, x 자리에는 기존 Virtual Network와 겹치지 않는 주소 중 원하는 대로 선택
    - Subnet Mask는 `255.255.255.0`
    - 이외 설정은 기본 설정 그대로
 4. **OK** 버튼을 눌러 저장하고 빠져나옵니다.

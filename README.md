@@ -28,3 +28,7 @@ Kubernetes가 작동하는 데 필요한 환경을 구성하고 필수 소프트
 ## [5. 추가 소프트웨어 설정](/guides/05-additional-softwares.md)
 
 Calico 네트워크 플러그인과 대시보드를 설치하고 사용하게 됩니다.
+
+## [6. 배포하기](/guides/06-deploy.md)
+
+Docker 이미지를 빌드 및 업로드하고 이를 배포하게 됩니다.

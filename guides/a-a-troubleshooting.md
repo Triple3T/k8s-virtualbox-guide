@@ -15,7 +15,8 @@
 Image Pull Secret을 namespace에 등록하지 않았거나 잘못된 Secret을 등록했다면 올바른 인증 정보를 포함한 Secret을 (재)등록해 주시고,
 배포에 Image Pull Secret을 등록하지 않았다면 `spec.template.spec.imagePullSecrets`에 적절하게 지정해 주세요.
 
-Image Pull Secret을 포함해 배포하는 경우 아래 형식과 같이 지정되어 있어야 합니다. `your-secret-name`은 Image Pull Secret의 이름입니다.
+Image Pull Secret을 포함해 배포하는 경우 아래 형식과 같이 지정되어 있어야 합니다.
+아래 내용 중 `your-secret-name`은 Image Pull Secret의 이름입니다.
 ```yaml
 spec:
   ...

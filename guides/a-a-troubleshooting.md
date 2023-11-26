@@ -11,18 +11,21 @@
 - 해당 배포에 Image Pull Secret을 등록하지 않음
 - 잘못된 Secret을 저장함
 
-Image Pull Secret은 대개 다음과 같은 형태의 yaml로 작성되어 있습니다.
+원인 파악 후 적절한 조치를 취해 주세요.
+Image Pull Secret을 namespace에 등록하지 않았거나 잘못된 Secret을 등록했다면 올바른 인증 정보를 포함한 Secret을 (재)등록해 주시고,
+배포에 Image Pull Secret을 등록하지 않았다면 `spec.template.spec.imagePullSecrets`에 적절하게 지정해 주세요.
+
+Image Pull Secret을 포함해 배포하는 경우 아래 형식과 같이 지정되어 있어야 합니다. `your-secret-name`은 Image Pull Secret의 이름입니다.
 ```yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: your-registry-url
-  namespace: default
-data:
-  .dockerconfigjson: your-registry-config-b64
-type: kubernetes.io/dockerconfigjson
+spec:
+  ...
+  template:
+    ...
+    spec:
+      ...
+      imagePullSecrets:
+        - name: your-secret-name
 ```
-여기에서 `your-registry-url`은 사설 레지스트리의 주소, `your-registry-config-b64`는 Base64로 인코딩된 인증 정보입니다.
 
 Base64 인코딩된 인증 정보를 만드는 방법은 바로 다음 섹션을 참고해 주세요.
 

@@ -39,6 +39,6 @@ Docker 이미지를 빌드 및 업로드하고 이를 배포하게 됩니다.
 
 가이드를 따라하며 맞닥뜨릴 수 있는 일부 상황에 대한 해결책을 정리해 두었습니다.
 
-## [Appendix B. 트러블슈팅](/guides/a-b-vmware-config.md)
+## [Appendix B. VMWare 설정](/guides/a-b-vmware-config.md)
 
 VMWare 환경에서 호스트 전용 네트워크를 만들어 VM에 연결하는 방법을 별도로 작성하였습니다.

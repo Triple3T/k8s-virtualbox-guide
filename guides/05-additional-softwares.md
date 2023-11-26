@@ -2,7 +2,7 @@
 
 ### 네트워크 플러그인 설치
 
-다른 모든 노드에 대해 작업을 완료했다면, 다시 `k8s-master`에 ssh 연결 후 아래 명령어를 실행하십시오.
+다른 모든 노드에 대해 작업을 완료했다면, 다시 `k8s-master`에 ssh 연결 후 아래 명령어를 실행하십시오. 또는 이 리포지토리의 [scripts/calico-setup.sh](/scripts/calico-setup.sh) 파일을 다운로드받아 실행 권한(`chmod +x`)을 부여한 후 실행하십시오.
 
 ```shell
 curl https://raw.githubusercontent.com/projectcalico/calico/v3.26.3/manifests/calico.yaml -LO

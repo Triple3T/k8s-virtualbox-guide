@@ -21,4 +21,4 @@ VMWare의 Host-only network 설정은 VirtualBox와 약간 다릅니다. 아래 
 2. VMWare에서 **Edit** > **Virtual Network Editor...** 순서로 Virtual Network Editor를 엽니다. 관리자 권한이 부여되지 않았다면 **Change Settings** 버튼을 눌러 관리자 권한을 부여합니다.
 3. 네트워크 목록 중 1에 지정된 NAT 네트워크를 찾아 고르고 **NAT Settings...** 버튼을 눌러 NAT 설정 창을 엽니다.
 4. Port Forwarding 섹션에서 **Add** 버튼을 눌러 포트 포워딩 설정을 완료하십시오. Virtual machine IP address 항목에는 1에서 기억한 IP를 입력하십시오.
-5. `kubectl proxy` 명령어로 프록시를 열 때, 1에서 기억한 IP로 열어야 합니다. 어댑터 2의 IP로 열면 안 됩니다.
+5. `nohup kubectl proxy` 명령어로 프록시를 열 때, 1에서 기억한 IP로 열어야 합니다. 어댑터 2의 IP로 열면 안 됩니다.

@@ -2,7 +2,7 @@
 
 ### 네트워크 플러그인 설치
 
-다른 모든 노드에 대해 작업을 완료했다면, 다시 `k8s-master`에 ssh 연결 후 아래 명령어를 실행하십시오. 또는 이 리포지토리의 [scripts/calico-setup.sh](/scripts/calico-setup.sh) 파일을 다운로드받아 실행 권한(`chmod +x`)을 부여한 후 실행하십시오.
+다른 모든 노드에 대해 작업을 완료했다면, 다시 `k8s-master`에 ssh 연결 후 아래 명령어를 실행하십시오. 또는 이 리포지토리의 [scripts/calico-setup.sh](/scripts/calico-setup.sh) 파일을 다운로드받아 실행 권한을 부여(`chmod +x`)한 후 실행하십시오.
 
 ```shell
 curl https://raw.githubusercontent.com/projectcalico/calico/v3.26.3/manifests/calico.yaml -LO
@@ -13,7 +13,7 @@ kubectl apply -f calico.yaml
 
 ### 대시보드 설치
 
-아래 명령어를 `k8s-master`에 실행하십시오.
+아래 명령어를 `k8s-master`에 실행하십시오. 또는 이 리포지토리의 [scripts/k8s-dashboard-setup.sh](/scripts/k8s-dashboard-setup.sh) 파일을 다운로드받아 실행 권한을 부여(`chmod +x`)한 후 실행하십시오.
 
 ```shell
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
@@ -23,7 +23,7 @@ kubectl apply -f k8s-dashboard-service-account.yaml
 
 이 명령어는 Kubernetes Dashboard를 설치하고, 여기에서 사용할, 모든 권한을 가진 `admin-user` 서비스 계정을 생성합니다.
 
-2번째 줄의 yaml은 이 리포지토리의 [k8s-dashboard-service-account.yaml](/yamls/k8s-dashboard-service-account.yaml)과 동일합니다.
+2번째 줄의 yaml은 이 리포지토리의 [k8s-dashboard-service-account.yaml](/yamls/k8s-dashboard-service-account.yaml)과 동일합니다. 이 파일을 다운로드받은 후 명령어에 사용되는 yaml을 이 파일로 대체해도 됩니다.
 
 ### 대시보드 유저 확인
 

@@ -4,6 +4,13 @@
 
 스크립트 파일이 Windows 스타일 줄바꿈(`CRLF`)인 경우 실행 중 오류가 발생합니다. 줄바꿈 문자가 `CRLF`가 아닌 `LF`인지 반드시 확인하시기 바랍니다.
 
+### master 노드에 join을 수행했으나 node 목록에 보이지 않음
+OS 설치 시 **Your server’s name** 입력란에 입력한 값을 통일시켰을 경우 이러한 문제가 발생할 수 있습니다.
+이 경우 join을 수행할 node의 hostname을 중복되지 않는 이름으로 다시 지정한 뒤,
+`sudo kubeadm reset`, `sudo systemctl restart kubelet`, `sudo reboot` 명령어를 순차적으로 수행한 후
+다시 join을 시도해 보십시오.
+수행한 후에도 정상 작동하지 않는다면 모든 VM을 삭제하고 VM 생성 및 게스트 OS 설치부터 다시 시도해 보십시오.
+
 ### 사설 레지스트리의 Docker 이미지 다운로드 실패
 
 아래 중 최소 하나일 수 있습니다.

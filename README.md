@@ -42,3 +42,7 @@ Docker 이미지를 빌드 및 업로드하고 이를 배포하게 됩니다.
 ## [Appendix B. VMWare 설정](/guides/a-b-vmware-config.md)
 
 VMWare 환경에서 호스트 전용 네트워크를 만들어 VM에 연결하는 방법을 별도로 작성하였습니다.
+
+## [Appendix C. Metrics](/guides/a-c-metrics.md)
+
+Kubernetes Dashboard에서 CPU 및 Memory 사용량 그래프 뷰를 추가하는 방법을 추가했습니다.
